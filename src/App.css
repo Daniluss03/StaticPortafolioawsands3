@@ -1,0 +1,293 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 56px; /* Para el navbar fixed */
+}
+
+/* Hero Section con fondo oscuro y texto claro */
+.hero-section {
+    background: linear-gradient(to right, #2c2c2c, #1a1a1a); /* Dos tonos de gris oscuro */
+    padding: 200px 0;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Estilos del texto sin sombras */
+.hero-section h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-section .lead {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 1;
+}
+
+/* Contenedor para centrar el contenido */
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Cards */
+.card {
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Formulario de contacto */
+.form-control {
+    border-radius: 0;
+    padding: 12px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #0d6efd;
+}
+
+/* Botones */
+.btn {
+    background-color: #D3D3D3; /* Gris suave, igual que las cards */
+    color: #000; /* Texto en negro para buen contraste */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
+
+.btn:hover {
+    background-color: #B0B0B0; /* Gris más oscuro al pasar el mouse */
+}
+
+/* Footer */
+.social-links a {
+    font-size: 24px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+}
+
+.social-links a:hover {
+    transform: translateY(-3px);
+    color: #a2a7ad !important;
+}
+
+/* GitHub icon specific hover */
+.social-links a:hover .fa-github {
+    color: #fff !important;
+}
+
+/* LinkedIn icon specific hover */
+.social-links a:hover .fa-linkedin {
+    color: #ececec !important;
+}
+
+/* Secciones */
+section {
+    padding: 80px 0;
+    margin-bottom: 10px;
+}
+
+/* Animaciones para scroll */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* About Section */
+#about {
+    background-color: #707375;
+}
+
+#about .lead {
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* Certifications Cards */
+#certifications .card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#certifications .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(126, 125, 125, 0.1);
+}
+
+#certifications .card-body {
+    padding: 2rem 1.5rem;
+}
+
+#certifications .fa-aws {
+    color: #FF9900;
+}
+
+#certifications .fa-microsoft {
+    color: #00a4ef;
+}
+
+#certifications .fa-cloud {
+    color: #f80000;
+}
+
+/* Project Cards */
+#projects .card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #fff;
+    height: 100%;
+}
+
+#projects .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+#projects .project-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    padding: 1rem;
+    background-color: #f8f9fa;
+}
+
+#projects .card-body {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#projects .card-title {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+#projects .card-text {
+    color: #6c757d;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+#projects .btn-primary {
+    margin-top: auto;
+    background-color: #818488;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    transition: background-color 0.3s ease;
+    align-self: start;
+}
+
+#projects .btn-primary:hover {
+    background-color: #0b5ed7;
+}
+
+/* Disabled buttons */
+.btn.disabled, 
+.btn:disabled {
+    background-color: #6c757d;
+    border-color: #6c757d;
+    opacity: 0.65;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* Hover effect for disabled buttons */
+.btn.disabled:hover, 
+.btn:disabled:hover {
+    background-color: #6c757d;
+    border-color: #6c757d;
+}
+
+/* Sección de certificaciones */
+.certifications-section {
+    background: linear-gradient(to right, #f0f0f0, #d0d0d0); /* Dos tonos de gris claro */
+    color: #333; /* Texto oscuro para contraste */
+}
+
+.certifications-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.certification-badge {
+    width: 150px; /* Ancho fijo */
+    height: 150px; /* Altura fija */
+    object-fit: cover; /* Mantiene la proporción y recorta si es necesario */
+    margin: 10px; /* Espaciado entre imágenes */
+}
+
+.certification-badge:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo para los títulos de las secciones */
+.section-title {
+    background-color: #fff; /* Fondo blanco */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    margin: 0; /* Sin margen */
+    width: 100%; /* Ancho completo */
+    font-weight: 700; /* Hacer el texto más grueso */
+    font-size: 2rem; /* Ajustar el tamaño si es necesario */
+}
+
+/* Estilo para la Navbar */
+.navbar {
+    background-color: #212529; /* Color de fondo más oscuro */
+}
+
+.navbar-brand {
+    color: #ffffff; /* Color del texto de la marca */
+}
+
+.nav-link {
+    color: #ffffff; /* Color del texto de los enlaces */
+}
+
+.nav-link:hover {
+    color: #adb5bd; /* Color al pasar el mouse */
+}
+
+.navbar-toggler {
+    border-color: #ffffff; /* Color del borde del botón de colapso */
+}
+
+.navbar-toggler-icon {
+    background-color: #ffffff; /* Color del icono del botón de colapso */
+}
+
+/* Alinear los enlaces a la derecha */
+.navbar-nav {
+    margin-left: auto; /* Empuja los enlaces a la derecha */
+}
+
+/* Sección de Contacto */
+.contact-section {
+    background: linear-gradient(to right, #f0f0f0, #d0d0d0); /* Mismo fondo que Certificaciones */
+    color: #333; /* Texto oscuro para contraste */
+}
+  

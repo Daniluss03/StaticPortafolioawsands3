@@ -4,103 +4,223 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portafolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome para íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./src/App.css">
 </head>
 <body>
-    <!-- Header/Navbar -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Danilo Rincon</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#certifications">Certificaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Mis Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <!-- Home Section -->
-    <section id="home">
-        <div class="hero">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Full Stack Developer</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-1">Danilo Rincon</h1>
+            <p class="lead">Cloud Engineer & AWS Specialist</p>
         </div>
     </section>
 
-    <!-- About Me Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <img src="profile-photo.jpg" alt="My Profile Photo">
-            <p>
-                Hello! I'm a passionate Full Stack Developer with experience in modern web technologies.
-                I love creating efficient and elegant solutions to complex problems.
-            </p>
+    <!-- Certificaciones Section -->
+    <section id="certifications" class="certifications-section">
+        <div class="section-container">
+            <h2 class="section-title text-center mb-5">Certificaciones</h2>
         </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <h3>Project 1</h3>
-                <p>Description of project 1</p>
-                <a href="#" class="project-link">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>Project 2</h3>
-                <p>Description of project 2</p>
-                <a href="#" class="project-link">View Project</a>
-            </div>
-            <!-- Add more project cards as needed -->
-        </div>
-    </section>
-
-    <!-- Certifications Section -->
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <div class="cert-container">
-            <div class="certification">
-                <h3>Certification 1</h3>
-                <p>Details about certification</p>
-            </div>
-            <div class="certification">
-                <h3>Certification 2</h3>
-                <p>Details about certification</p>
-            </div>
-            <!-- Add more certifications as needed -->
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <div class="contact-info">
-            <div class="social-links">
-                <a href="https://linkedin.com/in/your-profile" target="_blank">
-                    <i class="fab fa-linkedin"></i> LinkedIn
+        <div class="container">
+            <div class="certifications-container">
+                <!-- AWS Certified Solutions Architect Associate -->
+                <a href="https://www.credly.com/badges/tu-id-de-badge" 
+                   target="_blank" 
+                   rel="noopener noreferrer">
+                    <img src="https://d1.awsstatic.com/certification/badges/AWS-Certified-Solutions-Architect-Associate_badge_150x150.e359ae4a6d4d82c3e31d4f9104c8d389b56a2423.png"
+                         alt="AWS Certified Solutions Architect Associate"
+                         class="certification-badge"
+                         loading="lazy">
                 </a>
-                <a href="https://github.com/your-username" target="_blank">
-                    <i class="fab fa-github"></i> GitHub
+                <!-- AWS Certified Cloud Practitioner -->
+                <a href="https://www.credly.com/badges/tu-id-de-badge" 
+                   target="_blank" 
+                   rel="noopener noreferrer">
+                    <img src="https://d1.awsstatic.com/training-and-certification/certification-badges/AWS-Certified-Cloud-Practitioner_badge.634f8a21af2e0e956ed8905a72366146ba22b74c.png"
+                         alt="AWS Certified Cloud Practitioner"
+                         class="certification-badge"
+                         loading="lazy">
                 </a>
+                <!-- Azure Certification -->
+                <a href="https://www.credly.com/badges/tu-id-de-badge" 
+                   target="_blank" 
+                   rel="noopener noreferrer">
+                    <img src="https://miro.medium.com/v2/resize:fit:600/1*KjpRHQuaF0X0Kcb5lpWY_A.png"
+                         alt="Azure Certification"
+                         class="certification-badge"
+                         loading="lazy">
+                </a>
+                <!-- Oracle Certification -->
+                <a href="https://www.credly.com/badges/tu-id-de-badge" 
+                   target="_blank" 
+                   rel="noopener noreferrer">
+                    <img src="https://brm-workforce.oracle.com/pdf/certview/images/OCIF2023CA.png"
+                         alt="Oracle Certification"
+                         class="certification-badge"
+                         loading="lazy">
+                </a>
+                <!-- Agrega más certificaciones aquí -->
             </div>
-            <form>
-                <input type="text" placeholder="Your Name">
-                <input type="email" placeholder="Your Email">
-                <textarea placeholder="Your Message"></textarea>
-                <button type="submit">Send Message</button>
-            </form>
+        </div>
+    </section>
+
+    <!-- Proyectos Section -->
+    <section id="projects" class="projects-section">
+        <div class="section-container">
+            <h2 class="section-title text-center mb-5">Mis Proyectos</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <!-- AWS Architecture Project -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRispMK33--76i5xpTIuhMlIhjbGz3Zln1lg&s" 
+                             class="card-img-top project-img" 
+                             alt="AWS Architecture">
+                        <div class="card-body">
+                            <h5 class="card-title">Architecture in AWS</h5>
+                            <p class="card-text">I designed a mini architecture based on a lab to host a static website in an S3 bucket and point it to a domain in GoDaddy.</p>
+                            <a href="https://github.com/Daniluss03?tab=repositories" 
+                               class="btn btn-primary"
+                               target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FastAPI Project -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://fastapi.tiangolo.com/img/logo-margin/logo-teal.png" 
+                             class="card-img-top project-img" 
+                             alt="FastAPI Project">
+                        <div class="card-body">
+                            <h5 class="card-title">API with FastAPI</h5>
+                            <p class="card-text">I designed an API with multiple endpoints to display KPIs, showcasing my skills in backend development.</p>
+                            <button class="btn btn-primary disabled" disabled>Coming Soon</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 87 Razones Project -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRapGwhTpsSNAwJHevBtOTaSAAFKQ-d2_jD0Q&s" 
+                             class="card-img-top project-img" 
+                             alt="87 Razones por Santander">
+                        <div class="card-body">
+                            <h5 class="card-title">87 Razones por Santander</h5>
+                            <p class="card-text">Developed a comprehensive tourism platform showcasing Santander's municipalities.</p>
+                            <a href="https://87razonesporsantander.com/components/contenidoPagina87Municipios/Barichara.html" 
+                               class="btn btn-primary"
+                               target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Davivienda Project -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://www.valoraanalitik.com/wp-content/uploads/2022/05/davivienda-2.jpg" 
+                             class="card-img-top project-img" 
+                             alt="Davivienda Project">
+                        <div class="card-body">
+                            <h5 class="card-title">Davivienda Solutions</h5>
+                            <p class="card-text">Designed customized solutions for proposals to potential customers, focusing on innovative banking solutions and digital transformation.</p>
+                            <button class="btn btn-primary disabled" disabled>Coming Soon</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fundación de la Mujer Project -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="https://www.elempleo.com/sitios-empresariales/colombia/fundacion-de-la-mujer/video/LogoLoopFundacion_1_1.jpg" 
+                             class="card-img-top project-img" 
+                             alt="Fundación de la Mujer Project">
+                        <div class="card-body">
+                            <h5 class="card-title">Fundación de la Mujer</h5>
+                            <p class="card-text">Implemented microfinance solutions and digital inclusion strategies.</p>
+                            <button class="btn btn-primary disabled" disabled>Coming Soon</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lotería -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-container">
+            <h2 class="section-title text-center mb-5">Contacto</h2>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/Daniluss03" 
+                   class="text-white me-3"
+                   target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/danilo-rincon-2a1bb9217" 
+                   class="text-white me-3"
+                   target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <p class="mt-3 mb-0">&copy; 2024 Danilo Rincon. All rights reserved.</p>
+        </div>
     </footer>
 
-    <!-- Font Awesome for icons -->
-    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS y Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
